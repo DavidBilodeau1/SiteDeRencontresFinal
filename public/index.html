@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href= "css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+	<script src="script/script.js"></script>
+	<div class="sideBar">
+	<ul class="navMenu">
+  <li><a href="accueil.html"><i class="fa fa-home"></i></a></li>
+  <li><a id="menu" onclick="checkNotif(); toggleMenu()"><i class="fa fa-bell-o"></i><ul id="menu-box" style="display: none">
+  <li><a id="notif">notif 1</a></li>
+</ul></a></li>
+  <div id="notification"></div>
+  <li><a href="https://login.live.com/"><i class="fa fa-users"></i></a></li>
+  <li><a href="about.html"><i class="fa fa-comments"></i></a></li>
+  <li><a href="form.html">Sign Up</a></li>
+  
+</ul> 
+</div>
+<div id="connect"class="connect"></br></br><center><form >
+	<p>Email:  </p>
+				<input id="logEmail" type="text"></input>
+			
+			<div>
+				<p>Password:  </p>
+				<input id="logPassword" type="password"></input>
+			</div>
+			<button id="loginBtn">Log in</button>
+			
+<FORM>
+<SELECT id="select" name="nom" size="1">
+<OPTION>
+<OPTION>sports
+<OPTION>books
+<OPTION>videogames
+<OPTION>food
+<OPTION>art
+<OPTION>movies
+</SELECT>
+</FORM>
+</form></center></div>
+</div>
+	</head>
+	<body>
+	<center>	<h1 id="nom"> Rencontres Etudiantes </h1> </center>
+	<div class="container">
+	<div class="sports" onclick="hoverPic()" id="dropPic" name="sports" ondragover="allowDrop(event)" ondrop="drop(event)" style="background-image: url(images/profilePics/pp1.jpg); background-size:cover;"></div>
+	<div class="books" id="dropPic" name="books" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp11.jpg); background-size:cover;"></div>
+	<div class="videogames" id="dropPic" name="videogames" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp10.jpg); background-size:cover;"></div>
+	<div class="movies" id="dropPic" name="movies" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp4.jpg); background-size:cover;"></div>
+	<div class="sports" id="dropPic" name="sports" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp5.jpg); background-size:cover;"></div>
+	<div class="food" id="dropPic" name="food" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp6.jpg); background-size:cover;"></div>
+	<div class="art" id="dropPic" name="art" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp7.jpg); background-size:cover;"></div>
+	<div class="movies" id="dropPic" name="movies" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp8.jpg); background-size:cover;"></div>
+	<div class="videogames" id="dropPic" name="videogames" ondragover="allowDrop(event)" ondrop="drop(event)"style="background-image: url(images/profilePics/pp9.jpg); background-size:cover;"></div>
+	</div>
+	<div>
+<img id="userPic"class="profilePic" name="sports" draggable="true" width="12%" ondragend="notification()" ondragstart="drag(event)" src="images/noPic.jpg"> </img>
+<div id="drapPic" onmouseleave="drapPic2()" onmouseover="drapPic()" style="border-radius:50%; width:100px; height: 100px; background-image: url(images/drap.jpg); background-position: center; background-size: 195%; box-shadow: -3px -3px 3px #2f2f2f; position:fixed; bottom: 12%; left: 3%; z-index: 2;"></div>
+</div>
+		<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="script/app.js"></script>
+ <script src="script/jquery-ui.js"></script>
+</body>
+</html>

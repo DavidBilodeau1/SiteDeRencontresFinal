@@ -1,0 +1,130 @@
+@font-face{font-family: whales;
+src: url(fonts/whales.ttf)}
+.navMenu{
+	font-family: calibri;
+	font-size: 36px;
+	color: white;
+	list-style-type: none;
+	position: absolute;
+	left: -20px;
+	top: 0px;
+}
+.navMenu li{
+	
+}
+.navMenu li:hover{
+	
+	
+}
+.navMenu li a{
+	color: white;
+	text-decoration: none;
+	transition: 0.2s ease-in;
+	position: relative;
+	top: 30px;
+}
+.navMenu li a:hover{
+	text-shadow: 4px 2px 5px #FF0040;
+}
+.sideBar{
+	height: 100%;
+	width: 25%; 
+	background-color: #2288B3;
+	box-shadow: 4px 4px 5px #064864;
+	position: fixed; 
+	left: 0px;
+	top: 0%;}
+#nom{
+	color: black;
+	font-size: 200%;
+	font-family: "whales";
+	font-weight: bolder;
+	position: fixed;
+	Left: 5%;
+	text-align: center;}
+.fa:hover{
+	
+}
+.profilePic{
+	position: fixed;
+	left: 5%; 
+	Top: 60%; 
+	border: 10px solid #9C0000;
+	box-shadow:-3px -3px 3px 2px #555555;
+	border-radius: 15px;
+	background-size: 150%; 
+	background-repeat: no-repeat;
+	background-position:center;}
+body{
+	color: white;
+	background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
+	position: fixed;
+
+ background-attachment: fixed;
+ margin-left: 5cm;
+ z-index: 0;}
+#dropPic{
+	position: relative;
+	overflow: hidden;	
+	margin:8%;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+	border: 7px solid black;
+	box-shadow:-3px -3px 3px 2px #555555;
+	}
+#thumbsUp{height: 100px; width: 100px;animation-name: showEffect; opacity:0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;}
+
+@keyframes showEffect{ 0% { opacity:0; }
+50% { opacity:1; }
+100% { opacity:0; }}
+.container{ margin-left: 5cm;height: 800px;width: 800px; background-color: rgba(178,178,178,0.7); display:block; box-shadow: inset 3px -3px 5px 2px #555555;}
+.connect{position: fixed;
+ right:0px;
+ top:0px;
+ width: 20%;
+ height: 35%;
+ background-color: rgba(69,175,245,0.7);
+ box-shadow: -5px 5px 5px #555555;
+ }
+#notification{
+	height: 16px;
+	width: 16px;
+	background-color: red;
+	border-radius: 4px;
+	position: relative;
+	left: 25%;
+	top:8px;
+	visibility:hidden;
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+}
+#menu-box{
+	position: relative;
+	left: 50px;
+	height: 200px;
+	width: 150px;
+	background-color: rgba(169,175,145,0.7);
+	box-shadow: 2px 3px 2px 5px #2f2f2f;
+}
+#tayeule{
+	border-radius: 5px;
+	font-size: 300%;
+	font-family: Arial;
+	text-decoration: none;
+	color: black;
+	border: 2px solid blue;
+	background-color: white;
+}
+#tayeule:hover{
+	background-color: darkgrey;
+}
+#tayeule:active{
+	color: black;
+}
+
+

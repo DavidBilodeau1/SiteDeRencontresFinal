@@ -1,0 +1,38 @@
+fieldset{
+	width:98%;
+	height:700px;
+}
+input{
+	width:50%;
+}
+.Sexe{
+	width:15%;
+	margin:-15px;
+}
+
+.Sexe:checked {
+    height: 50px;
+    width: 50px;
+	margin:10px;
+}
+div{
+	height:650px;
+	width:44%;
+	display:inline-block;
+	float:left;
+}
+textarea{
+	width:50%;
+}
+aside{
+	width:44%;
+	height:650px;
+	float:right;
+}
+select{
+	margin-left:10%;
+}
+
+
+
+
